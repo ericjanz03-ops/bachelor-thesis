@@ -1,0 +1,12 @@
+# Typst cache
+.typst/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
