@@ -6,6 +6,16 @@
 
 = Einleitung <einleitung>
 
+#block(
+  fill: rgb("#fff3cd"),
+  stroke: rgb("#ffc107"),
+  radius: 4pt,
+  inset: 12pt,
+  width: 100%,
+)[
+  *Hinweis:* Bei dieser Arbeit handelt es sich *nicht* um eine echte wissenschaftliche Arbeit, sondern ausschließlich um eine *Demonstration* des Typst-Templates. Sämtliche Inhalte wurden vollständig durch eine KI generiert und besitzen keinerlei wissenschaftliche Aussagekraft. Angegebene Quellen, Zitate und Referenzen sind fiktiv und existieren im Zweifel nicht.
+]
+
 == Motivation
 
 Die fortschreitende Digitalisierung stellt Unternehmen jeder Größenordnung vor grundlegende
