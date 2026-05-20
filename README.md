@@ -146,7 +146,7 @@ Footnote citations follow the FOM style (Author Year, S. X). Import is handled a
 ) <fig-arch>
 ```
 
-The footnote number is suppressed in the Abbildungsverzeichnis and only appears on the figure page in the main text.
+The footnote number is suppressed in the list of figures and only appears on the figure page in the main text.
 
 **Alternative — source line below the figure** (does not appear in the list of figures):
 
