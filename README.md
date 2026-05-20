@@ -24,24 +24,6 @@ Install the **[Tinymist Typst](https://marketplace.visualstudio.com/items?itemNa
 - Press `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`), then run **Tinymist: Show Document Preview** — or click the preview icon in the top-right corner of the editor when a `.typ` file is open.
 - The preview updates automatically on every save.
 
-**Recommended workspace settings** (`.vscode/settings.json`):
-
-```json
-{
-  "tinymist.exportPdf": "onSave",
-  "tinymist.rootPath": ".",
-  "tinymist.formatterMode": "typstyle"
-}
-```
-
-| Setting | Effect |
-| --- | --- |
-| `exportPdf: "onSave"` | Compiles `main.pdf` on every save — no manual `typst compile` needed |
-| `rootPath: "."` | Sets the project root so imports resolve correctly |
-| `formatterMode: "typstyle"` | Enables auto-formatting (requires `typstyle` to be installed) |
-
-> **Tip:** Open `main.typ` first, then trigger the preview. Tinymist tracks the active `.typ` file, so always keep `main.typ` as your entry point.
-
 ---
 
 ## Compiling
