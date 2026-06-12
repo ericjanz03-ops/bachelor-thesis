@@ -231,6 +231,7 @@
     )),
   )
   counter(page).update(1)
+  counter(footnote).update(0)
   body
 }
 
