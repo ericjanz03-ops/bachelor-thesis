@@ -1,12 +1,12 @@
 // ─── Page layout per FOM guidelines ──────────────────────────────────────────
 // Margins: top 4 cm, bottom 2.8 cm, left 4 cm, right 2 cm
 
-#let body-font    = ("Helvetica Neue", "Arial")
+#let body-font    = ("Times New Roman", "Times")
 #let heading-font = body-font
 #let code-font    = ("Menlo", "IBM Plex Mono", "DejaVu Sans Mono", "Courier New")
 
 // ─── Central size definitions ─────────────────────────────────────────────────
-#let body-size   = 11pt
+#let body-size   = 12pt
 #let fn-size     = body-size - 2pt   //  9 pt  (footnote text)
 #let fn-num-size = body-size - 4pt   //  7 pt  (footnote number in text and footnote)
 
