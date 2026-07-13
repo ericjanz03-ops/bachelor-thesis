@@ -17,10 +17,30 @@
 // Format page reference
 #let _page(page) = if page != none [, S.~#page] else []
 
+// Page reference for ibid — includes the trailing "." only when a page is given,
+// because "ebd." already ends with a period when no page follows.
+#let _ibid-page(page) = if page != none [, S.~#page.] else []
+
+// Tracks the last cited key, bibliographic page, and document page for ibid detection.
+// "ebd." is only used when the previous citation is on the same document page.
+#let _last-cite = state("last-cite", (key: none, page: none, doc-page: none))
+
 // Paraphrase footnote (cf.)
-#let cf(key, page: none) = {
+#let cf(key, page: none) = context {
+  let last         = _last-cite.get()
+  let current-page = here().page()
+  let same-key      = last.key      == repr(key)
+  let same-page     = last.page     == page
+  let same-doc-page = last.doc-page == current-page
+  _last-cite.update((key: repr(key), page: page, doc-page: current-page))
   "\u{2060}"
-  footnote[Vgl. #cite(key, form: "prose")#_page(page).]
+  if same-doc-page and same-key and same-page {
+    footnote[Vgl. ebd.]
+  } else if same-doc-page and same-key {
+    footnote[Vgl. ebd.#_ibid-page(page)]
+  } else {
+    footnote[Vgl. #cite(key, form: "prose")#_page(page).]
+  }
 }
 
 // Direct quote footnote (verbatim, without "Vgl.")
