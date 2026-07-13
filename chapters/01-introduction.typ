@@ -2,70 +2,64 @@
 #import "../lib/cite.typ": cf, quot, cf-multi
 #import "../lib/abbr.typ": abbr
 
-// ─── Chapter 1: Einleitung ────────────────────────────────────────────────────
-
 = Einleitung <einleitung>
 
-#block(
-  fill: rgb("#fff3cd"),
-  stroke: rgb("#ffc107"),
-  radius: 4pt,
-  inset: 12pt,
-  width: 100%,
-)[
-  *Hinweis:* Bei dieser Arbeit handelt es sich *nicht* um eine echte wissenschaftliche Arbeit, sondern ausschließlich um eine *Demonstration* des Typst-Templates. Sämtliche Inhalte wurden vollständig durch eine KI generiert und besitzen keinerlei wissenschaftliche Aussagekraft. Angegebene Quellen, Zitate und Referenzen sind fiktiv und existieren im Zweifel nicht.
-]
+== Motivation und Zielsetzung
 
-== Motivation
-
-Die fortschreitende Digitalisierung stellt Unternehmen jeder Größenordnung vor grundlegende
-Herausforderungen hinsichtlich ihrer organisatorischen Strukturen und
-informationstechnischen Infrastruktur. Insbesondere #abbr("KMU", "Kleine und mittlere Unternehmen")
-sehen sich mit der Notwendigkeit konfrontiert, gewachsene Prozesslandschaften durch den Einsatz
-integrierter #abbr("IS", "Informationssysteme") zu modernisieren, um ihre Wettbewerbsfähigkeit in
-einem dynamischen Marktumfeld nachhaltig zu sichern.#cf(<davenportPuttingEnterpriseEnterprise1998>, page: "121")
-
-Die Fragmentierung betrieblicher Datenhaltung gilt als wesentliche Ursache für ineffiziente
-Entscheidungsprozesse, da heterogene Systemlandschaften eine kohärente Auswertung
-unternehmensweiter Kennzahlen erheblich erschweren. Funktionsbereiche wie Beschaffung,
-Produktion und Rechnungswesen operieren häufig auf Basis voneinander isolierter Datensilos,
-was zu redundanter Datenpflege sowie inkonsistenten Berichten führt.#cf(<klausWhatERP2000>, page: "142 f")
-
-Die Einführung unternehmensweiter #abbr("ERP", "Enterprise-Resource-Planning")-Systeme wird in der
-betriebswirtschaftlichen Forschung als zentraler Lösungsansatz für diese Problematik diskutiert,
-wobei die Integration sämtlicher Geschäftsprozesse auf einer einheitlichen Datenbasis als
-entscheidender Mehrwert gilt. Dennoch ist die Implementierung solcher Systeme mit erheblichen
-Aufwänden verbunden, die eine sorgfältige strategische Planung voraussetzen.#cf(<umbleEnterpriseResourcePlanning2003>, page: "242")
-
-== Zielsetzung
-
-Die vorliegende Arbeit verfolgt das Ziel, die wesentlichen Erfolgsfaktoren und Herausforderungen
-bei der Implementierung betrieblicher IS zu analysieren und deren Auswirkungen auf die
-organisatorische Effizienz zu bewerten. Dabei wird sowohl eine theoretische Fundierung als auch
-eine praxisorientierte Betrachtung angestrebt, um handlungsleitende Erkenntnisse für
-Entscheidungsträger abzuleiten.
-
-Im Mittelpunkt der Untersuchung steht die Frage, unter welchen Bedingungen der Einsatz
-integrierter Softwarelösungen einen messbaren betriebswirtschaftlichen Nutzen generiert und
-welche organisatorischen sowie technischen Voraussetzungen eine erfolgreiche Einführung
-begünstigen.#cf-multi((<shangAssessingManagingBenefits2002>, "272 f"), (<umbleEnterpriseResourcePlanning2003>, "244"))
-
-Die Arbeit nimmt eine beratungsorientierte Perspektive ein und richtet sich an Führungskräfte sowie
-#abbr("IT", "Informationstechnologie")-Verantwortliche, die vor der strategischen Entscheidung für
-oder gegen eine Systemeinführung stehen. Technische Implementierungsdetails werden bewusst
-zugunsten einer prozessualen und betriebswirtschaftlichen Analyse zurückgestellt.
-
-== Aufbau der Arbeit
-
-Das zweite Kapitel legt die theoretischen Grundlagen der Untersuchung dar, indem IS klassifiziert,
-relevante Architekturmodelle vorgestellt und das Konzept der digitalen Transformation abgegrenzt
-werden. Ergänzend werden gängige Bewertungsrahmen für IT-Investitionen erläutert.
-
-Das dritte Kapitel überführt die theoretischen Konzepte in eine praxisnahe Analyse, wobei ein
-generisches Referenzszenario als Untersuchungsgrundlage dient. Dabei werden Systemarchitektur,
-Implementierungsprozess und Integrationsaspekte systematisch beleuchtet.
-
-Das vierte Kapitel widmet sich einer kritischen Diskussion der erzielten Erkenntnisse, indem
-Vorteile und Limitationen gegenübergestellt und strategische Empfehlungen abgeleitet werden.
-Das fünfte Kapitel fasst die zentralen Ergebnisse zusammen und gibt einen Ausblick auf offene
-Forschungsfragen.
+Bereits 1971 wurde in der anfänglichen Forschung zur automatisierten Synthese von
+Softwareprogrammen von Manna und Waldinger beschrieben, dass es oft einfacher ist,
+das Ziel einer Berechnung abstrakt zu beschreiben, als den Programmcode dafür explizit
+zu definieren.
+1 Während diese Vision der automatisierten Code-Generierung historisch
+durch starre, deterministische Ansätze und komplexe mathematische Theorembeweise
+verfolgt wurde, ist sie heute durch brandaktuelle Large Language Models (LLM) geprägt.
+Software kann somit direkt aus natürlicher Sprache generiert werden. So präsentieren
+Jiang et al. in ihrer Studie aus dem Januar 2026 eine umfassende Übersicht über diesen
+Paradigmenwechsel, den sie als Natural-Language-to-Code definieren.
+2 Gleichzeitig
+betonen die Autoren jedoch eine Lücke zwischen der rein akademischen Forschung und
+der praktischen Softwareentwicklung. Sie stellen fest, dass etablierte, standardisierte
+Evaluierungs-Benchmarks die Komplexität und Herausforderungen von realen,
+industriellen Entwicklungsszenarien nicht angemessen widerspiegeln.3
+Um diese Lücke zwischen akademischer Forschung und industrieller Praxis zu schließen,
+fokussiert sich die hier geplante Arbeit auf ServiceNow-Projekte. Historisch war die
+Bereitstellung von Unternehmenssoftware stark durch das fundamentale Dilemma
+zwischen teurer Individualentwicklung und funktionaler, aber dafür starrer
+Standardsoftware geprägt. Dies beschreibt Brooks in einem 1987 veröffentlichten
+Fachartikel, in dem er schon damals die anfallenden Entwicklungskosten dem oftmals
+günstigeren Kaufpreis für Standardsoftware gegenüberstellt.4 Brooks argumentiert stark
+für die Verwendung von Standardsoftware aufgrund der oft guten Dokumentation, breiten
+Verfügbarkeit und schnellen Entwicklung.5 Die Relevanz dieses Fokus wird durch die
+heutige Marktstellung der ServiceNow-Plattform verdeutlicht. Mit einem globalen
+Kundenstamm von über 8100 Unternehmen und einer Durchdringung von mehr als 85 %
+der Fortune-500-Unternehmen hat sich ServiceNow zu einem der wichtigsten
+Standardsoftware-Lieferanten auf dem gesamten Markt etabliert.6 Folglich ist die
+1 Vgl. Manna, Z. & Waldinger, R. J. (1971), S. 151.
+2 Vgl. Jiang, J. et al. (2026), S. 8.
+3 Vgl. ebd., S. 55.
+4 Vgl. Brooks, F. P. (1987), S. 16f.
+5 Vgl. ebd.
+6 Vgl. ServiceNow, Inc. (2026), S. 2.
+2
+Implementierung von ServiceNow und somit die Softwareentwicklung bzw.
+Softwarekonfiguration der Plattform, welche auf den Low-Code-Ansatz setzt, von großer
+wirtschaftlicher Bedeutung.
+Genau in diesem bedeutenden Umfeld der Softwareentwicklung verspricht der Einsatz
+von generativer künstlicher Intelligenz, im Englischen Generative Artificial Intelligence
+(GenAI), die Entwicklungseffizienz drastisch zu steigern. Die empirische Studie von
+Peng et al. aus dem Jahr 2023 belegt dabei eine Ersparnis in der Entwicklungszeit von bis
+zu 55,8 % unter Nutzung von GitHub Copilot.7 Dieser enorme Effizienzgewinn geht
+jedoch unweigerlich mit neuen, komplexen Herausforderungen für die Softwarequalität
+einher. Im Gegensatz zu traditionellen, deterministischen und regelbasierten Methoden
+arbeiten moderne LLMs bei der Code-Generierung rein stochastisch und datengetrieben.
+Dies beschreiben Ghorbian et al. in ihrem Werk aus 2026, wobei sie unter anderem auf
+die Risiken der GenAI-gestützten Programmierung eingehen. So birgt diese das Risiko,
+die Qualität der entwickelten Software stark zu gefährden.8
+Dieser Kontrast aus Effizienzversprechen und Qualitätsrisiken zeigt sich heute besonders
+deutlich im Wandel von Low-Code-Plattformen wie ServiceNow.9 Wie Liu et al. belegen,
+integrieren diese Systeme zunehmend GenAI-gestützte Code-Generierung, was in der
+Praxis zu großen Zuverlässigkeitsbedenken führt und zwingend menschliches
+Fachwissen zur Validierung erfordert.10 Um genau dieses Spannungsfeld zwischen
+potenziellen Effizienzgewinnen und drohenden Qualitätsverlusten in der industriellen
+Praxis systematisch zu evaluieren, untersucht die vorliegende Arbeit den Einsatz von
+GenAI anhand praxisnaher Entwicklungsszenarien in ServiceNow.
