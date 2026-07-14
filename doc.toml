@@ -24,5 +24,6 @@ print_mode          = false   # true  → duplex printing
 declaration         = true   # false → omit declaration of independent work
 ai_register         = true    # false → omit AI tools register
 appendix            = false   # true  → include appendix (chapters/appendix.typ)
-split_bibliography  = false  # true  → group Quellenverzeichnis by source type (books → articles → online)
-                              #         uses refs.bib; entries sorted by type then author via fom-split.csl
+split_bibliography  = true   # true  → append an "Internetquellen" sub-heading (refs-online.bib) inside
+                              #         the Literaturverzeichnis (refs.bib); only one entry ("Literatur-
+                              #         verzeichnis") shows up in the Inhaltsverzeichnis; requires Typst ≥ 0.15

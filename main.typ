@@ -101,21 +101,29 @@
 }
 
 // Bibliography
-// split_bibliography = true uses fom-split.csl which sorts entries by type
-// (books → articles/chapters → online → other) so all sources of the same
-// kind are grouped together. True sub-headings require Typst multi-bibliography
-// support which is not yet available; entries still live in a single refs.bib.
+// split_bibliography = true appends internet sources (refs-online.bib) under
+// an "Internetquellen" sub-heading within the same Literaturverzeichnis
+// section. Only "Literaturverzeichnis" appears in the Inhaltsverzeichnis —
+// the "Internetquellen" sub-heading is unnumbered and not outlined.
+// Requires Typst ≥ 0.15 (multi-bibliography support). Citations are routed
+// automatically: each .bib file only contains the keys it "owns", so Typst
+// assigns each citation to the bibliography whose source file defines it.
 #pagebreak(weak: true)
 #bibliography(
   "refs.bib",
   title: [Literaturverzeichnis],
-  style: if meta.options.at("split_bibliography", default: false) {
-    "lib/fom-split.csl"
-  } else {
-    "lib/fom.csl"
-  },
+  style: "lib/fom.csl",
   full: false,
 )
+#if meta.options.at("split_bibliography", default: false) {
+  heading(outlined: false, numbering: none)[Internetquellen]
+  bibliography(
+    "refs-online.bib",
+    title: none,
+    style: "lib/fom.csl",
+    full: false,
+  )
+}
 
 // Appendix (enable in doc.toml: options.appendix = true)
 #if meta.options.at("appendix", default: false) {
