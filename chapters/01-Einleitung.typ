@@ -52,3 +52,26 @@ Fachwissen zur Validierung erfordert.#cf(<liuEmpiricalStudyLowcode2026a>, page: 
 potenziellen Effizienzgewinnen und drohenden Qualitätsverlusten in der industriellen
 Praxis systematisch zu evaluieren, untersucht die vorliegende Arbeit den Einsatz von
 GenAI anhand praxisnaher Entwicklungsszenarien in ServiceNow.
+
+== Forschungsfrage
+
+Ausgehend von der in Kapitel 1.1 dargelegten Motivation verfolgt die vorliegende Arbeit das Ziel, den Einsatz generativer künstlicher Intelligenz bei der Code-Generierung in ServiceNow-Implementierungsprojekten empirisch zu untersuchen. Dabei werden sowohl die technische als auch die wirtschaftliche Perspektive berücksichtigt, da ein Effizienzgewinn durch generative KI nur dann einen echten Mehrwert für IT-Dienstleister darstellt, wenn er nicht zulasten der Softwarequalität geht und sich zugleich betriebswirtschaftlich sinnvoll einordnen lässt.
+Daraus ergibt sich die folgende, forschungsleitende Frage dieser Arbeit:
+
+
+Welche technischen und wirtschaftlichen Auswirkungen hat der Einsatz generativer künstlicher Intelligenz auf die Code-Generierung in ServiceNow-Implementierungsprojekten?
+
+
+Diese Forschungsfrage bildet den roten Faden der Arbeit. In Kapitel 2 werden zunächst die theoretischen Grundlagen zu ServiceNow-Architekturen, generativer KI in der Softwareentwicklung sowie Ansätzen der Effizienz- und Qualitätsmessung erarbeitet. Auf dieser Basis werden in Kapitel 2.3.3 mehrere konkrete, überprüfbare Forschungshypothesen abgeleitet, die die Dimensionen Entwicklungseffizienz, Codequalität, Erfahrungsniveau der Entwickler sowie ökonomische Implikationen abdecken und im empirischen Teil der Arbeit (Kapitel 4) geprüft werden. Kapitel 5 ordnet die Ergebnisse mit Blick auf die Forschungsfrage ein, und Kapitel 6 liefert deren abschließende Beantwortung
+
+== Methodisches Vorgehen
+
+Zur Beantwortung der in Kapitel 1.2 formulierten Forschungsfrage verfolgt die vorliegende Arbeit einen mehrstufigen methodischen Ansatz, der eine theoretische Fundierung mit einer empirischen Untersuchung verbindet.
+
+
+Zunächst wird eine systematische Literaturrecherche nach vom Brocke et al. durchgeführt, um die theoretischen Grundlagen zu ServiceNow, generativer KI sowie zur Effizienz- und Qualitätsmessung in der Softwareentwicklung zu erarbeiten und die Forschungshypothesen theoriegeleitet abzuleiten. Im Zentrum der Arbeit steht anschließend ein kontrolliertes Experiment, das sich am Prozessmodell von Wohlin et al. mit den Phasen Scoping, Planning, Operation, Analysis and Interpretation sowie Presentation orientiert. Dabei bearbeiten Entwickler aus dem ServiceNow-Umfeld vergleichbare Entwicklungsaufgaben jeweils einmal mit und einmal ohne Unterstützung durch generative KI, sodass Unterschiede in Entwicklungseffizienz und Codequalität empirisch erfasst werden können. Zur Festlegung geeigneter Messkriterien wird ergänzend der Goal-Question-Metric-Ansatz nach Basili und Rombach herangezogen.
+
+
+Die methodische Vorgehensweise wird in Kapitel 3 ausführlich dargelegt und begründet; dort werden auch die Gütekriterien der empirischen Software-Engineering-Forschung sowie die konkrete Operationalisierung der Messkriterien für das Experiment erläutert.
+
+== Aufbau der Arbeit
