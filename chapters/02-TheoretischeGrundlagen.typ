@@ -2,7 +2,7 @@
 #import "../lib/cite.typ": cf, quot, cf-multi
 #import "../lib/abbr.typ": abbr
 
-= Theoretische Grundlagen <theoretische-grundlagen>
+= Theoretische Grundlagen <theoretischeGrundlagen>
 
 == Architektur und Entwicklung in ServiceNow-Modulen
 
