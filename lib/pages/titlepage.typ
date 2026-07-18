@@ -8,10 +8,10 @@
   let gap  = v(h-spacing)
   let gap2 = v(2 * h-spacing)
 
-  let supervisor-label = if meta.document.type in ("Bachelorarbeit", "Masterarbeit") {
-    [Erstgutachter/in:]
+  let supervisor-label = if meta.document.type in ("Bachelor-Thesis", "Masterarbeit") {
+    [Erstgutachter:]
   } else {
-    [Betreuer/in:]
+    [Betreuer:]
   }
 
   let degree  = meta.document.at("degree",  default: "")
@@ -66,7 +66,7 @@
   if meta.document.supervisor != "" {
     meta-rows += ([#supervisor-label], [#meta.document.supervisor])
   }
-  meta-rows += ([Matrikelnummer(n):], [#ids])
+  meta-rows += ([Matrikelnummer:], [#ids])
   meta-rows += ([Abgabedatum:],       [#meta.document.date])
 
   place(bottom + left, dy: -1.5cm)[
