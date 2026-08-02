@@ -55,8 +55,16 @@
 - Qualitätsrisiken: Halluzinationen, Wartbarkeit, Sicherheit (Ghorbian et al.; Tosi 2024; Sun et al. 2026)
 - Erfahrungsniveau-Effekt (Prather et al. 2024; Tona et al. 2024) → liefert die Vorlage für die Moderator-Hypothese in 2.3.3
 - GenAI in Low-Code (Liu et al. 2026; Paliwal et al. 2024; Gorissen et al. 2025 als nächstliegende Vergleichsstudie)
-- **Offen:** „QUELLE"-Platzhalter ersetzen (Ebert & Louridas, Tosi, Zhang et al., Prather et al., Liu et al., Paliwal et al., Gorissen et al.)
-- _Status: Entwurf vorhanden._
+- **ToDo:**
+	- Studien benennen und aufzeigen was sie herausgefunden haben
+
+|2.2|2.3.3|
+|---|---|---|
+|**Frage**|Was ist empirisch bekannt?|Was folgt daraus für diese Arbeit?|
+|**Form**|referierend, je Studie Design + Befund|argumentierend, je Hypothese ein Absatz|
+|**Peng / METR**|Befunde inkl. Kontext (Aufgabentyp, Werkzeug, Stichprobe)|nur Rückverweis: widersprüchliche Befundlage → H1 gerichtet, H3 ungerichtet|
+|**Ghorbian / Tosi / Sun**|Risikoarten benennen|Begründung für die Qualitätsdimension in H3|
+|**Prather / Tona**|Erfahrungsniveau-Effekt darstellen|Herleitung der Moderator-Hypothese H4|
 
 ### 2.3 Effizienz- und Qualitätsmessung in der Softwareentwicklung
 
