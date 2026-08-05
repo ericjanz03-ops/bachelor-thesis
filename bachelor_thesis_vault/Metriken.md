@@ -6,7 +6,7 @@ Zeitspanne vom ersten `start`-Eintrag bis zum **ersten** `ready_for_testing`-Ein
 
 ### 2. Time-to-first-pass
 
-Zeitspanne vom ersten `start`-Eintrag bis zu dem `ready_for_testing`-Eintrag, dessen ATF-Lauf **erstmals alle 5 Testfälle** bestanden hat. Das ist deine zentrale Gesamtzeit-Metrik pro Aufgabe/Bedingung.
+Zeitspanne vom ersten `start`-Eintrag bis zu dem `ready_for_testing`-Eintrag, dessen ATF-Lauf **erstmals alle 4/5 Testfälle** bestanden hat. Das ist deine zentrale Gesamtzeit-Metrik pro Aufgabe/Bedingung.
 
 ### 3. Debugging-Zeit
 
