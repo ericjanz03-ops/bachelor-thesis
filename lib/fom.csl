@@ -255,7 +255,7 @@
             <text macro="author-bib"/>
             <text macro="year-paren" suffix="."/>
             <text variable="title" suffix=","/>
-            <text variable="URL" prefix="URL: "/>
+            <text variable="URL" prefix=""/>
             <group prefix="(" suffix=")">
               <text term="accessed" suffix=": "/>
               <date variable="accessed">

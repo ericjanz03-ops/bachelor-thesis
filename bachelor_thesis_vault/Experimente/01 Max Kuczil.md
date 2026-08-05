@@ -20,6 +20,9 @@
 
 **Task:** Genehmiger-Eskalation bei Change Requests **Bedingung:** ohne Copilot
 
+- Start 13:19
+- Expression expected line 5 column 1, deshalb nicht möglich zu speichern (13:49)
+- Bei erneutem START war aufeinmal unsaved code weg
 
 
 ---
@@ -28,10 +31,16 @@
 
 **Task:** Ticket-Routing bei Incidents **Bedingung:** mit Copilot
 
++ 3 minuten drauf rechnen - vergessen auf start zu klicken vor dem prompten
+
+# Sonstige Hinweise
+
+- In der Aufgabenstellung erwähnen ob KI erlaubt oder nicht
 
 ## **Auffälligkeiten Prompt-Verhalten (nur bei Copilot-Bedingung):**
 
-**Verstoß gegen Websuche-Verbot beobachtet?** ☐ Nein ☐ Ja → Anmerkung: _______
+- Für das Debugging wurde KI erneut befragt und mit Fehler konfrontiert
+- es wurde nicht selbst im KI generierten Code nach Fehlern gesucht
 
 ---
 
