@@ -1,7 +1,7 @@
 
 | Name               | Erfahrung mit ServiceNow | Junior/Senior | Latin Square Gruppe |
 | ------------------ | ------------------------ | ------------- | ------------------- |
-| Max Kuczil         | 3 Jahre                  | Junior J1     | G1                  |
+| Max Kuczil         | 2 Jahre                  | Junior J1     | G1                  |
 | Jan Höltje         | 2 Jahre                  | Junior J2     | G2                  |
 | Glen Kulling       | 1 Jahr                   | Junior J3     | G3                  |
 | Maximilian Rosner  | 3 Jahre                  | Junior J4     | G4                  |
@@ -15,12 +15,12 @@
 
 # Latin Square
 
-| Gruppe | 1. Durchgang        | 2. Durchgang        |     |
-| ------ | ------------------- | ------------------- | --- |
-| G1     | Aufgabe A – ohne KI | Aufgabe B – mit KI  |     |
-| G2     | Aufgabe B – mit KI  | Aufgabe A – ohne KI |     |
-| G3     | Aufgabe A – mit KI  | Aufgabe B – ohne KI |     |
-| G4     | Aufgabe B – ohne KI | Aufgabe A – mit KI  |     |
+| Gruppe | 1. Durchgang        | 2. Durchgang        |     |     |
+| ------ | ------------------- | ------------------- | --- | --- |
+| G1     | Aufgabe A – ohne KI | Aufgabe B – mit KI  |     |     |
+| G2     | Aufgabe B – ohne KI | Aufgabe A – mit KI  |     |     |
+| G2     | Aufgabe B – mit KI  | Aufgabe A – ohne KI |     |     |
+| G4     | Aufgabe A – mit KI  | Aufgabe B – ohne KI |     |     |
 
 # Anschreiben
 
