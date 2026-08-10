@@ -34,40 +34,27 @@ Mit der zunehmenden Verbreitung dieser Werkzeuge stellt sich jedoch unmittelbar 
 
 === Grundlagen der Softwarequalitätsmessung nach ISO/IEC 25010 <iso25010>
 
-Um die Auswirkungen von GenAI auf die Qualität des entwickelten Codes zu untersuchen, ist zunächst eine Definition von Softwarequalität erforderlich. Nur wenn die Qualität definiert und messbar gemacht wird, ist es möglich eine bessere Softwarequalität überhaupt anzustreben. Das grundlegende Problem der Qualitätsmessung ist dabei, dass Qualität keine allgemeingültige, objektive Größe ist, sondern ein multidimensionales Konzept welches viele verschiedene Aspekte umfasst.#cf(<kanSoftwareQualityOverview1994a>, page: 5) Die Anfänge der Softwarequalitätsmessung lassen sich bin in die 1960er Jahre zurückverfolgen. So schrieben bereits 1968 Rubey und Hartwick in ihrem Beitrag darüber, wie Softwarequalität quantitativ messbar gemacht werden kann und welche Metriken dafür herangezogen werden können.#cf(<rubeyQuantitativeMeasurementProgram1968>, page: "672ff")
+Um die Auswirkungen von GenAI auf die Qualität des entwickelten Codes zu untersuchen, ist zunächst eine Definition von Softwarequalität erforderlich. Nur eine definierte und messbare Qualität lässt sich gezielt verbessern. Das grundlegende Problem der Qualitätsmessung ist dabei, dass Qualität keine allgemeingültige, objektive Größe ist, sondern ein multidimensionales Konzept welches viele verschiedene Aspekte umfasst.#cf(<kanSoftwareQualityOverview1994a>, page: 5) Die Anfänge der Softwarequalitätsmessung lassen sich bis in die 1960er Jahre zurückverfolgen. So schrieben bereits 1968 Rubey und Hartwick in ihrem Beitrag darüber, wie Softwarequalität quantitativ messbar gemacht werden kann und welche Metriken dafür herangezogen werden können.#cf(<rubeyQuantitativeMeasurementProgram1968>, page: "672ff")
 
-Aus diesen frühen Arbeiten hat sich bis heute der grundlegende Ansatz erhalten, Softwarequalität nicht direkt als eigene Größe zu messen, sondern über hierarchisch gegliederte Modelle zu operationalisieren. Übergeordnete Qualitätsmerkmale werden dabei in konkrete erhebbare Metriken überführt, wobei international anerkannte Standards den strukturellen Rahmen dafür abbilden. Als etablierter Standard hat sich hierbei die Normenreihe ISO/IEC 25000 unter dem Namen _#abbr("SQuaRE", "Systems and Software Quality Requirements and Evaluation")_ herausgebildet. Innerhalb dieser Normenreihe definiert die ISO/IEC 25010 ein Qualitätsmodell, das die Softwarequalität in neun übergeordnete Merkmale unterteilt, die wiederum in feinere Teilmerkmale aufgegliedert sind.#cf(<IsoStdIsoiec>)
+Qualitätsmanagement und -messung stammen dabei aus der industriellen Fertigung, um die Qualität hergestellter Produkte zu sichern und zu verbessern. So wird Qualität als die Einhaltung von Anforderungen und Spezifikationen verstanden, die ein Produkt erfüllen muss, um den Erwartungen der Kunden zu entsprechen. In der Softwareentwicklung ist dies jedoch nicht so einfach möglich, da Softwareprodukte in der Regel nicht physisch greifbar sind. In analogen Systemen können Toleranzen definiert und gemessen werden, was in der Softwareentwicklung schlichtweg nicht möglich ist.#cf(<sommervilleSoftwareEngineering2016>, page: 703)
 
-Die neun Merkmale umfassen Functional Suitability, Performance Efficiency,
-Compatibility, Interaction Capability, Reliability, Security, Maintainability,
-Flexibility und Safety.#cf(<IsoStdIsoiec>) Die Norm legt damit ausschließlich
-fest, _welche_ Eigenschaften Softwarequalität konstituieren, trifft jedoch
-keine Aussage darüber, wie diese Eigenschaften im Einzelfall zu gewichten oder
-zu erheben sind. Diese Entscheidung obliegt der jeweiligen Untersuchung und muss
-sich am Untersuchungsgegenstand orientieren.
+Dass Softwarequalität ein teilweise sehr subjektives Konstrukt ist, zeigt sich außerdem daran, dass einige Aspekte wie die Wartbarkeit oder die Verständlichkeit von Quellcode nicht direkt gemessen werden können. Des Weiteren haben diverse Stakeholder unterschiedliche Vorstellungen von ein und dem selben Softwareprodukt, was zu Kompromissen und somit Abweichungen von den ursprünglichen Anforderungen führen kann.#cf(<sommervilleSoftwareEngineering2016>, page: "703ff")
 
-Diese Merkmale sind jedoch für sich genommen nicht direkt messbar, sondern werden in
-der Norm weiter in Teilmerkmale untergliedert, die jeweils einen spezifischen
-Aspekt des übergeordneten Merkmals konkretisieren. So gliedert sich
-beispielsweise Functional Suitability in Functional Completeness, Functional
-Correctness und Functional Appropriateness, während sich Maintainability unter
-anderem in Analysability, Modifiability und Modularity aufteilt.#cf(<IsoStdIsoiec>) Eine vollständige Übersicht über die Merkmale und Teilmerkmale ist in @fig-ISO-IEC-25010 dargestellt.
+Eine vollumfassende Definition für gute Softwarequalität zu finden ist daher nicht möglich. Erkennbar ist dies auch an der von der #abbr("ISO", "International Organization for Standardization") und #abbr("IEC", "International Electrotechnical Commission") entwickelten Norm ISO/IEC 25010, die Softwareproduktqualität in neun übergeordnete Merkmale unterteilt, die wiederum in feinere Teilmerkmale aufgegliedert sind, wie in @fig-ISO-IEC-25010 zu erkennen ist. Jedes Merkmal definiert dabei einen spezifischen Aspekt von Softwarequalität. So stellt die Functional Suitability, zu deutsch 
+Funktionale Eignung, die Fähigkeit der Software dar, die expliziten und impliziten Anforderungen der Nutzer unter bestimmten Bedingungen zu erfüllen.#cf(<IsoStdIsoiec>) Die Maintainability, zu deutsch Wartbarkeit, beschreibt wiederum die Fähigkeit der Software von den entsprechenden Personen effektiv und effizient modifiziert werden zu können.#cf(<IsoStdIsoiec>)
 
 #figure(
   image("../assets/ISO_IEC_25010.png"),
   caption: [Übersicht über die Qualitätsmodell Merkmale nach ISO/IEC 25010:2023#footnote[#fig-source(<UpdateISO250102026>)]]
 ) <fig-ISO-IEC-25010>
 
-Erst auf dieser feineren Ebene lassen sich Messgrößen definieren, mit denen ein
-Teilmerkmal quantitativ oder qualitativ erfasst werden kann. Normen wie
-ISO/IEC 25010 liefern zwar die theoretischen Definitionen der Merkmale und
-Teilmerkmale, tragen jedoch wenig zu deren praktischer Umsetzung bei und die
-beschriebene Theorie muss erst operationalisiert
-werden.#cf(<wagnerOperationalisedProductQuality2015>, page: "101f") 
+Auch wenn die Norm auf diese Weise festlegt, welche Merkmale und Teilmerkmale Softwarequalität konstituieren, bleibt offen, wie diese in der Praxis tatsächlich gemessen werden können. Die in ISO/IEC 25010 beschriebenen Teilmerkmale sind selbst noch zu abstrakt, um unmittelbar erhoben zu werden, und müssen daher erst operationalisiert werden, bevor sich Qualität überhaupt quantifizieren lässt.#cf(<wagnerOperationalisedProductQuality2015>, page: "101f")
+
+Am Beispiel des Quamoco-Ansatzes lässt sich diese Operationalisierung konkret darstellen. Wagner et al. unterscheiden dabei zwischen den abstrakten Qualitätsaspekten, die sich stets auf das gesamte Produkt beziehen und nicht direkt messbar sind, und sogenannten Produktfaktoren, die konkrete, beobachtbare Eigenschaften einzelner Produktbestandteile beschreiben und dadurch messbar sind.#cf(<wagnerOperationalisedProductQuality2015>, page: "104f") So lässt sich etwa das Merkmal Maintainability nicht unmittelbar erfassen, jedoch der ihm zugeordnete Produktfaktor Duplizierung von Code-Abschnitten, der sich über die Messgröße der Klon-Abdeckung quantifizieren lässt.#cf(<wagnerOperationalisedProductQuality2015>, page: "104") Jeder Messgröße wird darüber hinaus ein konkretes Instrument zugeordnet, das die tatsächliche Datenerhebung realisiert, etwa eine Regel eines Codeanalysewerkzeugs.#cf(<wagnerOperationalisedProductQuality2015>, page: "105") Softwarequalitätsmessung erfolgt somit stets mehrstufig. Erst die schrittweise Zerlegung abstrakter Merkmale in konkrete, beobachtbare Eigenschaften und deren Zuordnung zu Messgrößen und Erhebungsinstrumenten macht eine quantitative Erfassung von Softwarequalität überhaupt möglich.
 
 
+=== Konzepte der Effizienzmessung und der Goal-Question-Metric-Ansatz <gqm>
 
-=== Konzepte der Produktivitätsmessung und der Goal-Question-Metric-Ansatz <gqm>
 
 
 === Synthese und Ableitung der Forschungshypothesen

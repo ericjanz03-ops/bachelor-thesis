@@ -30,4 +30,4 @@ Die gesamte Logik ist innerhalb dieser Business Rule zu implementieren.
 
 ## Vorgehen
 
-Bearbeiten Sie die Aufgabe wie in Ihrer regulären Arbeitspraxis. Nutzen Sie ausschließlich die Demoinstanz sowie, sofern zugewiesen, das bereitgestellte KI-Werkzeug. Auf der Instanz dürfen Sie sich frei bewegen. Verzichten Sie auf allgemeine Websuche oder externe Quellen während der Bearbeitung. Melden Sie Ihre Lösung mit dem Button _Ready for Testing_, sobald Sie sie für vollständig und korrekt halten. Die Bearbeitungszeit starten nach Betätigung des Button _Start_.
+Bearbeiten Sie die Aufgabe wie in Ihrer regulären Arbeitspraxis. Nutzen Sie ausschließlich die Demoinstanz sowie, sofern zugewiesen, das bereitgestellte KI-Werkzeug. Auf der Instanz dürfen Sie sich frei bewegen. Verzichten Sie auf allgemeine Websuche oder externe Quellen während der Bearbeitung. Melden Sie Ihre Lösung mit dem Button _Ready for Testing_, sobald Sie sie für vollständig und korrekt halten. Die Bearbeitungszeit startet nach Betätigung des Button _Start_.
