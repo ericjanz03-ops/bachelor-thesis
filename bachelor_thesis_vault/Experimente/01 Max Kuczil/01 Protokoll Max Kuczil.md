@@ -20,6 +20,9 @@
 
 **Task:** Genehmiger-Eskalation bei Change Requests **Bedingung:** ohne Copilot
 
+- 11:09 Uhr angefangen 
+- keine Nutzung von SN Utils
+- nutzt xplore
 - 
 
 
@@ -29,7 +32,7 @@
 
 **Task:** Ticket-Routing bei Incidents **Bedingung:** mit Copilot
 
-+ 
++ zu 2.: Ist die zuständige gruppe die aus 1.?
 
 # Sonstige Hinweise
 

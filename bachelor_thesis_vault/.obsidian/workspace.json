@@ -11,17 +11,70 @@
             "id": "f275bd3f0a007c40",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Task A.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Task A"
+            }
+          },
+          {
+            "id": "5243633281d9c787",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Task B.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Task B"
+            }
+          },
+          {
+            "id": "5accbfe9f704ee88",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimente/01 Max Kuczil.md",
+                "file": "Task A Musterlösung.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 Max Kuczil"
+              "title": "Task A Musterlösung"
+            }
+          },
+          {
+            "id": "c5dd81208d570010",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimente/01 Max Kuczil/01 Protokoll Max Kuczil.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 Protokoll Max Kuczil"
+            }
+          },
+          {
+            "id": "98a4edf2b3162210",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimente/01 Max Kuczil/03 Lösung Aufgabe B.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 Lösung Aufgabe B"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -183,17 +236,21 @@
       "bases:Neue Base erstellen": false
     }
   },
-  "active": "f275bd3f0a007c40",
+  "active": "98a4edf2b3162210",
   "lastOpenFiles": [
-    "CheatSheet.md",
-    "CheatSheet.pdf",
+    "Experimente/01 Max Kuczil/02 Lösung Aufgabe A.md",
+    "Experimente/01 Max Kuczil/03 Lösung Aufgabe B.md",
+    "Experimente/01 Max Kuczil/01 Protokoll Max Kuczil.md",
+    "Experimente/01 Max Kuczil",
     "Task A Musterlösung.md",
-    "Gliederung Bachelor-Thesis — Inhaltsleitfaden.md",
-    "Teilnehmer.md",
     "Task A.pdf",
-    "Task A.md",
     "Task B.pdf",
     "Task B.md",
+    "CheatSheet.md",
+    "CheatSheet.pdf",
+    "Gliederung Bachelor-Thesis — Inhaltsleitfaden.md",
+    "Teilnehmer.md",
+    "Task A.md",
     "Experiment Ablauf.md",
     "Task B Musterlösung.md",
     "Archiv/Task A 2.md",
@@ -202,7 +259,6 @@
     "Archiv/Task B.pdf",
     "Archiv/Task A.pdf",
     "Archiv",
-    "Experimente/01 Max Kuczil.md",
     "Experimente",
     "Metriken.md",
     "01_ToDo.md",
