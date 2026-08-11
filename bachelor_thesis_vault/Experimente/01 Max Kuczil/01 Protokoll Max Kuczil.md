@@ -61,9 +61,8 @@ Jede Intervention wird nach Typ erfasst — Grundlage für die spätere Untersch
 
 |Regel|Wert|Konsequenz|
 |---|---|---|
-|Maximale Bearbeitungszeit pro Aufgabe|___ Minuten|Bearbeitung wird beendet, Status im Log als "Timeout" vermerkt|
-|Maximale Anzahl Iterationszyklen|___|Bei Erreichen: Rücksprache, ob Fortsetzung sinnvoll|
-|Abbruch auf Wunsch des Teilnehmenden|—|Grund erfragen (freiwillig), im Protokoll vermerken|
+|Maximale Bearbeitungszeit pro Aufgabe|45 Minuten|Bearbeitung wird beendet, Status im Log als "Timeout" vermerkt|
+|Abbruch auf Wunsch des Teilnehmenden|nein|Grund erfragen (freiwillig), im Protokoll vermerken|
 
 ---
 
