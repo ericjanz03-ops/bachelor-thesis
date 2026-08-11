@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "41bd35caac0b0b29",
+        "id": "fd911ee58a8d6b84",
         "type": "tabs",
         "children": [
           {
-            "id": "78c4f9636aff6815",
+            "id": "f275bd3f0a007c40",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gliederung Bachelor-Thesis — Inhaltsleitfaden.md",
+                "file": "Experimente/01 Max Kuczil.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gliederung Bachelor-Thesis — Inhaltsleitfaden"
+              "title": "01 Max Kuczil"
             }
           }
         ]
@@ -183,8 +183,12 @@
       "bases:Neue Base erstellen": false
     }
   },
-  "active": "78c4f9636aff6815",
+  "active": "f275bd3f0a007c40",
   "lastOpenFiles": [
+    "CheatSheet.md",
+    "CheatSheet.pdf",
+    "Task A Musterlösung.md",
+    "Gliederung Bachelor-Thesis — Inhaltsleitfaden.md",
     "Teilnehmer.md",
     "Task A.pdf",
     "Task A.md",
@@ -192,8 +196,6 @@
     "Task B.md",
     "Experiment Ablauf.md",
     "Task B Musterlösung.md",
-    "Task A Musterlösung.md",
-    "CheatSheet.md",
     "Archiv/Task A 2.md",
     "Archiv/Task B.md",
     "Archiv/Task A.md",
@@ -201,7 +203,6 @@
     "Archiv/Task A.pdf",
     "Archiv",
     "Experimente/01 Max Kuczil.md",
-    "Gliederung Bachelor-Thesis — Inhaltsleitfaden.md",
     "Experimente",
     "Metriken.md",
     "01_ToDo.md",
