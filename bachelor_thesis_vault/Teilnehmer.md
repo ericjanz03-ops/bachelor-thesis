@@ -1,26 +1,26 @@
 
-| Name               | Erfahrung mit ServiceNow | Junior/Senior | Latin Square Gruppe |
-| ------------------ | ------------------------ | ------------- | ------------------- |
-| Max Kuczil         | 2 Jahre                  | Junior J1     | G1                  |
-| Jan Höltje         | 2 Jahre                  | Junior J2     | G2                  |
-| Glen Kulling       | 1 Jahr                   | Junior J3     | G3                  |
-| Maximilian Rosner  | 3 Jahre                  | Junior J4     | G4                  |
-| Jenny Smolczynski  |                          | Junior J5     | G1                  |
-| Nico Metzger       |                          | Senior S1     | G3                  |
-| Michael Königseder |                          | Senior S2     | G4                  |
-| Matthias Volk      |                          | Senior S3     | G1                  |
-| Benjamin Schulz    |                          | Senior S4     | G2                  |
-| Dima               |                          | Senior S5     | G3                  |
+| Name                   | Erfahrung mit ServiceNow | Junior/Senior | Latin Square Gruppe | Durchgeführt |
+| ---------------------- | ------------------------ | ------------- | ------------------- | ------------ |
+| P01 Max Kuczil         | 2 Jahre                  | Junior J1     | G1                  | x            |
+| Jan Höltje             | 2 Jahre                  | Junior J2     | G2                  |              |
+| Glen Kulling           | 1 Jahr                   | Junior J3     | G3                  |              |
+| Maximilian Rosner      | 3 Jahre                  | Junior J4     | G4                  |              |
+| Jenny Smolczynski      |                          | Junior J5     | G1                  |              |
+| P02 Michael Königseder |                          | Senior S2     | G3                  |              |
+| Nico Metzger           |                          | Senior S1     | G4                  |              |
+| Matthias Volk          |                          | Senior S3     | G1                  |              |
+| Benjamin Schulz        |                          | Senior S4     | G2                  |              |
+| Dima                   |                          | Senior S5     | G3                  |              |
 
 
 # Latin Square
 
-| Gruppe | 1. Durchgang        | 2. Durchgang        |     |     |
-| ------ | ------------------- | ------------------- | --- | --- |
-| G1     | Aufgabe A – ohne KI | Aufgabe B – mit KI  |     |     |
-| G2     | Aufgabe B – ohne KI | Aufgabe A – mit KI  |     |     |
-| G2     | Aufgabe B – mit KI  | Aufgabe A – ohne KI |     |     |
-| G4     | Aufgabe A – mit KI  | Aufgabe B – ohne KI |     |     |
+| Gruppe | 1. Durchgang        | 2. Durchgang        |
+| ------ | ------------------- | ------------------- |
+| G1     | Aufgabe A – ohne KI | Aufgabe B – mit KI  |
+| G2     | Aufgabe B – ohne KI | Aufgabe A – mit KI  |
+| G3     | Aufgabe A – mit KI  | Aufgabe B – ohne KI |
+| G4     | Aufgabe B – mit KI  | Aufgabe A – ohne KI |
 
 # Anschreiben
 

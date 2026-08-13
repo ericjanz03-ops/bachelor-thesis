@@ -13,8 +13,7 @@
 
 | Was Sie brauchen                                             | Suchraum                                                                                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Risiko                                                       | Standardfeld auf dem Change-Request-Formular                                                            |
-| Antragsteller                                                | Standardfeld auf dem Change-Request-Formular                                                            |
+| Risiko, Antragsteller                                        | Standardfeld auf dem Change-Request-Formular                                                            |
 | Zielfelder für Genehmigungsgruppe/Genehmiger                 | Individuelle Felder auf dem Change-Request-Formular                                                     |
 | Abteilungszuordnung und Kennzeichnung als Genehmigungsgruppe | Auf dem Gruppen-Datensatz (`sys_user_group`)                                                            |
 | Verfügbarkeit eines Genehmigers                              | Auf dem Benutzerprofil (`sys_user`)                                                                     |

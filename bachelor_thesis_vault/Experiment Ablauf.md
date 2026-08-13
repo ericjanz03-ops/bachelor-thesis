@@ -36,5 +36,4 @@
 
 # Limits
 
-- 40 Minuten pro Aufgabe
-- 
+- 45 Minuten pro Aufgabe

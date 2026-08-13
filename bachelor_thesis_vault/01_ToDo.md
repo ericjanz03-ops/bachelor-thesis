@@ -1,3 +1,3 @@
-- [ ] Start UI Action bauen
-- [ ] Notizen Feld in u_test_ession_log
+- [x] Start UI Action bauen
+- [x] Notizen Feld in u_test_ession_log
 - [ ] 
