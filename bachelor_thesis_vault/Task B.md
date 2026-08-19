@@ -5,7 +5,7 @@
 **Anforderung:** Implementieren Sie eine Business Rule, die beim Anlegen eines Incidents automatisch die zuständige Bearbeitungsgruppe ermittelt:
 
 1. Bei niedriger oder mittlerer Priorität: Standard-Bearbeitungsgruppe anhand der Kategorie zuweisen.
-2. Bei kritischer Priorität zusätzlich prüfen, ob die Standard-Bearbeitungsgruppe überlastet ist (mehr als 10 Incidents in Bearbeitung). Falls ja, dann weisen Sie bitte die Gruppe „Major Incident Team" zu.
+2. Bei kritischer Priorität zusätzlich prüfen, ob die Standard-Bearbeitungsgruppe überlastet ist (mehr als 10 Incidents im Status "In Bearbeitung"). Falls ja, dann weisen Sie bitte die Gruppe „Major Incident Team" zu.
 3. Ergebnis im Zuweisungsgruppen-Feld des Incidents hinterlegen.
 
 **Wo Sie suchen müssen:**

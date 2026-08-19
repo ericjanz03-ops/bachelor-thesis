@@ -2,11 +2,11 @@
 | Name                   | Erfahrung mit ServiceNow | Junior/Senior | Latin Square Gruppe | Durchgeführt |
 | ---------------------- | ------------------------ | ------------- | ------------------- | ------------ |
 | P01 Max Kuczil         | 2 Jahre                  | Junior J1     | G1                  | x            |
-| Jan Höltje             | 2 Jahre                  | Junior J2     | G2                  |              |
+| P03 Jan Höltje         | 2 Jahre                  | Junior J2     | G2                  | x            |
 | Glen Kulling           | 1 Jahr                   | Junior J3     | G3                  |              |
 | Maximilian Rosner      | 3 Jahre                  | Junior J4     | G4                  |              |
 | Jenny Smolczynski      |                          | Junior J5     | G1                  |              |
-| P02 Michael Königseder |                          | Senior S2     | G3                  |              |
+| P02 Michael Königseder |                          | Senior S2     | G3                  | x            |
 | Nico Metzger           |                          | Senior S1     | G4                  |              |
 | Matthias Volk          |                          | Senior S3     | G1                  |              |
 | Benjamin Schulz        |                          | Senior S4     | G2                  |              |

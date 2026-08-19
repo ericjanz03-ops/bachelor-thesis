@@ -61,16 +61,65 @@ Effizienz wird in der Softwareentwicklung üblicherweise im Zusammenhang mit den
 
 Produktivität bezeichnet hingegen grundsätzlich das Verhältnis aus einem generierten Output zu dem dafür aufgebrachten Aufwand. Die tatsächlichen Maße und Einheiten für Output und Input sind jedoch nicht branchenübergreifend einheitlich. Produktivität lässt sich zwar bei manueller Handarbeit recht einfach nachvollziehen, bei anderen Arten von Arbeit, wie bspw. Wissensarbeiten ist dies jedoch nur sehr schwer vergleichbar. Wissensarbeit ist in diesem Kontext jegliche Art von Arbeit, bei der die Arbeitskräfte ihr theoretisches und analytisches Wissen anwenden, um neue Produkte bzw. Dienstleistungen zu erschaffen.#cf(<ramirezMeasuringKnowledgeWorker>, page: 604)
 
-Der Begriff der Effizienz betrachtet im Rahmen der Produktivität vor allem die Seite des benötigten Aufwands.#cf(<wagnerDefiningProductivitySoftware2019>, page: 33) Da im Rahmen des Experimentes dieser Arbeit der zu erzeugende Output bereits festgelegt ist, ist es vor allem die Effizienz, die in dieser Studie neben den qualitativen Aspekten untersucht wird.
+Der Begriff der Effizienz betrachtet im Rahmen der Produktivität vor allem die Seite des eingesetzten Aufwands.#cf(<wagnerDefiningProductivitySoftware2019>, page: 33) Da im Rahmen des Experiments dieser Arbeit der zu erzeugende Output bereits festgelegt ist, ist es vor allem die Effizienz, die in dieser Studie neben den Qualitätsaspekten untersucht wird.
 
-Ein rein aufwandsbasiertes Effizienzverständnis läuft jedoch Gefahr, auf einfache Aktivitätsmaße wie Lines of Code oder die Anzahl an Commits pro Zeiteinheit zu reduzieren zu werden. Solche Maße gelten als unzureichend, da sie Aktivität mit tatsächlichem Output verwechseln und weder die Qualität des Ergebnisses noch den tatsächlich gelösten Anteil einer Aufgabe berücksichtigen.QUELLEforsgren Ein Entwickler, der viele Codezeilen produziert, dabei aber überproportional viel Nacharbeit verursacht, ist nach diesem Verständnis nicht automatisch effizienter als ein Entwickler mit geringerem Codeumfang, aber stabilerem Ergebnis. Effizienzmessung in der Softwareentwicklung muss folglich neben dem reinen Zeit- beziehungsweise Aufwandsaspekt auch den Prozessverlauf bis zum akzeptierten Ergebnis einbeziehen.
+Ein Effizienzverständnis, welches allerdings ausschließlich den Aufwandsaspekt begutachtet, läuft dabei Gefahr ausschließlich einfache Metriken wie die geschriebenen #abbr("LOC", "Lines of Code", german: "Quellcode") zu betrachten. Solche Maße sind jedoch nicht wirklich aussagekräftig, da sie bloße Aktivität mit tatsächlich nutzbarem Output verwechseln und weder die Qualität des Ergebnisses, noch tatsächlich gelösten Anteil einer Aufgabe berücksichtigen.#cf(<forsgrenSPACEDeveloperProductivity2021>, page: 52) Ein Entwickler, der viele LOC produziert, dabei allerdings überproportional viel Nacharbeit verursacht, ist grundlegend nicht automatisch effizienter als ein Entwickler, dessen Code mit geringerem Umfang ein stabileres Ergebnis liefert. Effizienzmessung in der Softwareentwicklung sollte folglich neben dem reinen Zeit- bzw. Aufwandsaspekt auch den Prozessverlauf bis zum fertigen und akzeptierten Ergebnis einbeziehen.#cf(<forsgrenSPACEDeveloperProductivity2021>, page: 52)
 
-Eine vergleichbare Perspektive findet sich auch im Quality-in-Use-Modell der ISO/IEC 25010, das Effizienz als das Verhältnis zwischen eingesetzten Ressourcen und der Genauigkeit sowie Vollständigkeit definiert, mit der ein Nutzer ein bestimmtes Ziel erreicht.#cf(<IsoStdIsoiec>) Anders als das in @iso25010 verwendete Produktqualitätsmodell bezieht sich dieses Verständnis nicht auf Eigenschaften des Softwareprodukts selbst, sondern auf den Prozess der Zielerreichung durch einen Nutzer – im vorliegenden Kontext also durch den Entwickler, der eine Programmieraufgabe mithilfe von GenAI-Unterstützung löst. Dieses Begriffsverständnis liegt in Kombination mit der vorab dargelegten Trennung von Effizienz, Produktivität und Effektivität der vorliegenden Arbeit zugrunde.
+Einen  Rahmen zur Einordnung von Entwicklerproduktivität liefert das SPACE-Rahmenwerk von Forsgren et al. aus dem Jahr 2021, das fünf Dimensionen unterscheidet: Satisfaction and Well-Being, Performance, Activity, Communication und Collaboration sowie Efficiency und Flow.#cf(<forsgrenSPACEDeveloperProductivity2021>, page: "48ff") Für diese Bachelor-Thesis ist insbesondere die Dimension Efficiency und Flow relevant, die den ungestörten, zügigen Fortschritt eines Entwicklers bei der Aufgabenbearbeitung beschreibt. Die übrigen Dimensionen liegen außerhalb des Untersuchungsgegenstands dieser Thesis, da das Experimentdesign auf Einzelaufgaben ohne Teaminteraktion ausgelegt ist. Das SPACE-Rahmenwerk bestätigt die grundlegende Annahme, dass Produktivität und damit auch die ihr zugrundeliegende Effizienzdimension kein eindimensionales Konstrukt ist, sondern erst durch eine Kombination mehrerer, aufeinander bezogener Messgrößen abgebildet werden kann.#cf(<forsgrenSPACEDeveloperProductivity2021>, page: 46)
 
-Einen differenzierteren Rahmen zur Einordnung von Entwicklerproduktivität liefert das SPACE-Framework, das fünf Dimensionen unterscheidet: Satisfaction and well-being, Performance, Activity, Communication and collaboration sowie Efficiency and flow.QUELLE forsgren Für die vorliegende Arbeit ist insbesondere die Dimension Efficiency and flow relevant, die den ungestörten, zügigen Fortschritt eines Entwicklers bei der Aufgabenbearbeitung beschreibt. Die übrigen Dimensionen – etwa Zufriedenheit oder Kommunikation im Team – liegen außerhalb des Untersuchungsgegenstands dieser Arbeit, da das Experimentdesign auf Einzelaufgaben ohne Teaminteraktion ausgelegt ist. Das SPACE-Framework bestätigt jedoch die grundlegende Annahme, dass Effizienz kein eindimensionales Konstrukt ist, sondern erst durch eine Kombination mehrerer, aufeinander bezogener Messgrößen abgebildet werden kann.
+Um aus diesem theoretischen Effizienzverständnis konkrete, im Experiment erhebbare Metriken abzuleiten, wird im Folgenden der #abbr("GQM", "Goal-Question-Metric")-Ansatz nach Basili und Rombach herangezogen.#cf(<basiliGoalQuestionMetric1994>, page: "528ff") GQM verfolgt grundsätzlich eine Top-Down-Logik. Dabei werden ausgehend von einem übergeordneten konzeptionellen Messziel (Goal) Fragen (Questions) formuliert, die das zuvor definierte Ziel characterisieren. Im dritten Schritt werden diesen Fragen konkrete, quantifizierbare Messgrößen (Metrics) zugeordnet. Die Messgrößen können dabei sowohl objektiv, als auch subjektiv sein.#cf(<basiliGoalQuestionMetric1994>, page: "528f")
 
-Um aus diesem theoretischen Effizienzverständnis konkrete, im Experiment erhebbare Metriken abzuleiten, wird im Folgenden der Goal-Question-Metric-Ansatz (GQM) nach Basili und Rombach herangezogen.#cf(<basiliGoalQuestionMetric1994>) GQM verfolgt eine Top-down-Logik: Ausgehend von einem übergeordneten Messziel (Goal) werden Fragen (Questions) formuliert, die den Zielerreichungsgrad operationalisieren; erst im letzten Schritt werden diesen Fragen konkrete, quantifizierbare Messgrößen (Metrics) zugeordnet.#cf(<basiliGoalQuestionMetric1994>) Der Ansatz ist dabei inhaltlich neutral – er gibt kein eigenes Effizienz- oder Qualitätsverständnis vor, sondern strukturiert lediglich die Ableitung von Metriken aus einem vorab definierten Ziel. In der vorliegenden Arbeit übernimmt GQM diese verbindende Funktion für beide Untersuchungsdimensionen: Er wird sowohl zur Ableitung der Effizienzmetriken aus dem in diesem Abschnitt dargelegten Effizienzverständnis als auch – ergänzend zum Produktqualitätsmodell aus @iso25010 – zur Strukturierung der Qualitätsmetriken herangezogen.
+Ein GQM-Modell ist dabei wie in @gqm-hierarchie zu sehen hierarchisch aufgebaut. Ein Ziel wird zu mehreren Fragen verfeinert, denen wiederum jeweils eine oder mehrere Metriken zugeordnet werden. Einzelne Metriken können dabei auch mehrfach zur Beantwortung unterschiedlicher Questions herangezogen werden.#cf(<basiliGoalQuestionMetric1994>, page: "529")
 
+#figure(
+  image("../assets/gqm_hierarchie.png"),
+  caption: [GQM-Hierarchie#footnote[#fig-based-on(<basiliGoalQuestionMetric1994>, page: 529)]]
+) <gqm-hierarchie>
 
+Die Definition eines Goals erfolgt anhand von vier Koordinaten. Zum einen dem Zweck, englisch Purpose, zum anderen dem zu untersuchenden Qualitätsmerkmal (Issue), dem Messobjekt (Object) sowie der Betrachtungsperspektive (Viewpoint), aus der die Messung erfolgt.#cf(<basiliGoalQuestionMetric1994>, page: "529f")
+
+Die nachfolgende Tabelle stellt die Anwendung des GQM-Ansatzes in Bezug auf das im Rahmen dieser Thesis durchgeführte Experiment dar.
+
+#figure(
+  table(
+    columns: (auto, auto, 1fr),
+    align: (left, left, left),
+    table.hline(),
+    [*Goal*], text(weight: "regular")[Purpose], text(weight: "regular")[Untersuchen],
+    [], [Issue], [der Wirkung von GenAI-Unterstützung auf],
+    [], [Object (process)], [die Code-Generierung bei ServiceNow Business Rules],
+    [], [Viewpoint], [aus Sicht des ServiceNow-Entwicklers / IT-Dienstleisters],
+    table.hline(),
+
+    [*Question*], [Q1], [Wie verändert sich der Zeitbedarf bis zur bestandenen Testsuite durch GenAI-Unterstützung?],
+    [*Metrics*], [M1], [Time-to-first-draft],
+    [], [M2], [Time-to-first-pass],
+    table.hline(),
+
+    [*Question*], [Q2], [Wie verändert sich der Iterations- und Nacharbeitsaufwand?],
+    [*Metrics*], [M3], [Iterationszyklen],
+    [], [M4], [Rework-Rate],
+    [], [M5], [Debugging-Zeit],
+    table.hline(),
+
+    [*Question*], [Q3], [Wie verändert sich die funktionale Korrektheit der generierten Artefakte?],
+    [*Metrics*], [M6], [ATF-Pass-Rate],
+    [], [M7], [First-Time-Right-Quote],
+    table.hline(),
+
+    [*Question*], [Q4], [Wie verändert sich die Wartbarkeit der generierten Artefakte?],
+    [*Metrics*], [M8], [ISO-25010-Rubrik-Score (Modularity, Analysability, Modifiability)],
+    [], [M9], [Codelänge (LOC, SLOC-Konvention)],
+    [], [M10], [Kommentierungsgrad],
+    table.hline(),
+
+    [*Question*], [Q5], [Wie unterscheiden sich die Effekte aus Q1–Q4 zwischen Erfahrungsniveaus (Junior/Senior)?],
+    [*Metrics*], [M11], [Subgruppenvergleich je Metrik (M1–M10) nach Erfahrungsgruppe],
+    [], [M12], [Interaktionseffekt Erfahrung × Bedingung],
+    table.hline(),
+  ),
+  caption: [GQM-Modell dieser Arbeit, in Anlehnung an das Vorgehen von Basili und Rombach #cf(<basiliGoalQuestionMetric1994>, page: "528ff")],
+) <tab-gqm>
 
 === Synthese und Ableitung der Forschungshypothesen
+
